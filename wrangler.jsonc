@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "seibun-narabe",
+  "main": "src/worker.tsx",
+  "compatibility_date": "2026-07-29",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "seibun-narabe.yhay81.com",
+      "custom_domain": true,
+    },
+  ],
+  "triggers": { "crons": ["51 20 * * *"] },
+  "observability": { "enabled": true },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "seibun-narabe",
+      "database_id": "5dcb81f7-c6de-49c3-8ed5-9355c6a1e80e",
+      "migrations_dir": "migrations",
+    },
+  ],
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+}

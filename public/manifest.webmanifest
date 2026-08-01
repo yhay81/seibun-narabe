@@ -1,0 +1,10 @@
+{
+  "name": "成分ならべ",
+  "short_name": "成分ならべ",
+  "description": "公式2,538食品の栄養成分を量に合わせて比較する",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3efe4",
+  "theme_color": "#31483d",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
